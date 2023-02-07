@@ -1,6 +1,8 @@
-/*
-! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
-*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+/* Default body font */
+
+/* ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -419,7 +421,11 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+html{
+  font-family: Roboto Mono, monospace, sans-serif;
+}
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -466,7 +472,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -513,17 +519,126 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.container{
+  width: 100%;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
+@media (min-width: 300px){
+  .container{
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+.sticky{
+  position: sticky;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mx-0{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.flex{
+  display: flex;
+}
+
+.h-screen{
+  height: 100vh;
+}
+
+.h-16{
+  height: 4rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.bg-neon-green{
+  --tw-bg-opacity: 1;
+  background-color: rgb(176 255 74 / var(--tw-bg-opacity));
+}
+
+.bg-light-blue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(84 164 181 / var(--tw-bg-opacity));
+}
+
+.bg-banner-bg{
+  background-image: url('/dist/assets/banner-bg.png');
+}
+
+.text-center{
+  text-align: center;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(16 20 22 / var(--tw-text-opacity));
 }
 
 h1 {
   color: blue;
   text-align: center;
+}
+
+.hover\:bg-lime-200:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 249 157 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-cyan-200:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(165 243 252 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-cyan-300:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(103 232 249 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px){
+  .md\:w-2\/12{
+    width: 16.666667%;
+  }
+
+  .md\:w-4\/12{
+    width: 33.333333%;
+  }
+
+  .md\:w-3\/12{
+    width: 25%;
+  }
 }

@@ -1,8 +1,17 @@
+/* Default body font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply font-RobotoMono;
+  }
+}
+
 h1 {
-    color: blue;
-    text-align: center;
+  color: blue;
+  text-align: center;
 }
