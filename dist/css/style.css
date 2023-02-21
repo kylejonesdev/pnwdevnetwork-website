@@ -588,7 +588,7 @@ html{
 }
 
 .bg-banner-bg{
-  background-image: url('/dist/assets/banner-bg.png');
+  background-image: url('../assets/banner-bg.png');
 }
 
 .text-center{
@@ -619,25 +619,12 @@ h1 {
   background-color: rgb(217 249 157 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-cyan-200:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(165 243 252 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-cyan-300:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(103 232 249 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 768px){
-  .md\:w-2\/12{
-    width: 16.666667%;
-  }
-
-  .md\:w-4\/12{
-    width: 33.333333%;
-  }
-
   .md\:w-3\/12{
     width: 25%;
   }
