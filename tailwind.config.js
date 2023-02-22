@@ -2,10 +2,6 @@
 module.exports = {
   content: ["./dist/**/*.{html,js}"],
   theme: {
-    screens: {
-      sm: "300px",
-      md: "768px",
-    },
     extend: {
       colors: {
         black: "#101416",

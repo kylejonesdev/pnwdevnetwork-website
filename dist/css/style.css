@@ -519,28 +519,30 @@ html{
   --tw-backdrop-sepia:  ;
 }
 
-.container{
-  width: 100%;
+.static{
+  position: static;
 }
 
-@media (min-width: 300px){
-  .container{
-    max-width: 300px;
-  }
-}
-
-@media (min-width: 768px){
-  .container{
-    max-width: 768px;
-  }
-}
-
-.sticky{
-  position: sticky;
+.absolute{
+  position: absolute;
 }
 
 .bottom-0{
   bottom: 0px;
+}
+
+.m-auto{
+  margin: auto;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .my-4{
@@ -553,8 +555,12 @@ html{
   margin-right: 0px;
 }
 
-.flex{
-  display: flex;
+.grid{
+  display: grid;
+}
+
+.hidden{
+  display: none;
 }
 
 .h-screen{
@@ -569,12 +575,24 @@ html{
   width: 100%;
 }
 
-.items-center{
-  align-items: center;
+.max-w-xs{
+  max-width: 20rem;
+}
+
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.resize{
+  resize: both;
 }
 
 .justify-center{
   justify-content: center;
+}
+
+.place-self-end{
+  place-self: end;
 }
 
 .bg-neon-green{
@@ -589,6 +607,10 @@ html{
 
 .bg-banner-bg{
   background-image: url('../assets/banner-bg.png');
+}
+
+.p-4{
+  padding: 1rem;
 }
 
 .text-center{
@@ -609,9 +631,27 @@ html{
   color: rgb(16 20 22 / var(--tw-text-opacity));
 }
 
-h1 {
-  color: blue;
-  text-align: center;
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.banner{
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 20 22 / var(--tw-bg-opacity));
+  background-repeat: no-repeat;
+}
+
+.grid-template {
+  grid-template-rows: auto 50px;
+}
+
+.copyright {
+  position: relative;
+  bottom: .1em;
 }
 
 .hover\:bg-lime-200:hover{
@@ -624,8 +664,8 @@ h1 {
   background-color: rgb(103 232 249 / var(--tw-bg-opacity));
 }
 
-@media (min-width: 768px){
-  .md\:w-3\/12{
-    width: 25%;
+@media (min-width: 640px){
+  .sm\:max-w-md{
+    max-width: 28rem;
   }
 }
