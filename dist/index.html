@@ -13,31 +13,39 @@
     >
       <div class="container md:w-3/12 sm:8/12">
         <div>
-          <img src="./assets/pnw-logo.png" alt="logo" />
-          <p class="text-white my-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <div class="mx-0 my-4">
-            <button
-              class="w-full h-16 text-center text-black font-bold bg-neon-green hover:bg-lime-200"
-            >
-              Join the Discord
-            </button>
-          </div>
-          <div class="mx-0 my-4">
-            <button
-              class="w-full h-16 text-center text-white font-bold bg-light-blue hover:bg-cyan-300"
-            >
-              Join the Meetup
-            </button>
+          <div class="py-8 pnw-logo-container">
+            <img class="pnw-logo-image m-auto p-0" data-tilt  data-tilt-speed="2000" src="./assets/pnw-logo.png" alt="">
+            <p class="text-white my-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="mx-0 my-4">
+              <button
+                class="w-full h-16 text-center text-black font-bold bg-neon-green hover:bg-lime-200"
+                data-tilt data-tilt-scale="1.1"
+                data-tilt-speed="3000"
+                data-tilt-axis="x"
+              >
+                Join the Discord
+              </button>
+            </div>
+            <div class="mx-0 my-4">
+              <button
+                class="w-full h-16 text-center text-white font-bold bg-light-blue hover:bg-cyan-300"
+                data-tilt data-tilt-scale="1.1"
+                data-tilt-speed="3000"
+                data-tilt-axis="x"
+              >
+                Join the Meetup
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
     <footer class="sticky bottom-0 text-white flex justify-center items-center">
       @2023
     </footer>
+    <script type="text/javascript" src="./vanilla-tilt.js"></script>
   </body>
 </html>
