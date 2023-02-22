@@ -1,8 +1,25 @@
+/* Default body font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-h1 {
-    color: blue;
-    text-align: center;
+@layer base {
+  html {
+    @apply font-RobotoMono;
+  }
+}
+
+.banner {
+  @apply bg-no-repeat bg-black;
+}
+
+.grid-template {
+  grid-template-rows: auto 50px;
+}
+
+.copyright {
+  position: relative;
+  bottom: .1em;
 }
