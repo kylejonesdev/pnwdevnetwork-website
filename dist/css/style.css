@@ -604,6 +604,14 @@ html{
   background-image: url('../assets/banner-bg.png');
 }
 
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
 .p-4{
   padding: 1rem;
 }
@@ -634,10 +642,9 @@ html{
   transition-duration: 150ms;
 }
 
-.no-repeat{
+.banner{
   --tw-bg-opacity: 1;
   background-color: rgb(16 20 22 / var(--tw-bg-opacity));
-  background-size: cover;
   background-repeat: no-repeat;
 }
 
