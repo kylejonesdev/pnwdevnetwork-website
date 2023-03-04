@@ -10,7 +10,7 @@ module.exports = {
         "light-blue": "#54a4b5",
       },
       backgroundImage: {
-        "banner-bg": "url('../assets/banner-bg.png')",
+        "banner-bg": "url('../assets/black-background.png')",
       },
     },
     fontFamily: {
