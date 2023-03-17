@@ -570,12 +570,12 @@ html{
   display: none;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
 .h-16{
   height: 4rem;
+}
+
+.h-screen{
+  height: 100vh;
 }
 
 .w-full{
