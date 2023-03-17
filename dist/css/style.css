@@ -519,6 +519,18 @@ html{
   --tw-backdrop-sepia:  ;
 }
 
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .static{
   position: static;
 }
@@ -535,16 +547,6 @@ html{
   margin: auto;
 }
 
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.my-auto{
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -555,6 +557,11 @@ html{
   margin-right: 0px;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .grid{
   display: grid;
 }
@@ -563,12 +570,12 @@ html{
   display: none;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
 .h-16{
   height: 4rem;
+}
+
+.h-screen{
+  height: 100vh;
 }
 
 .w-full{
@@ -607,6 +614,14 @@ html{
 
 .bg-banner-bg{
   background-image: url('../assets/banner-bg.png');
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 
 .p-4{
